@@ -1,0 +1,30 @@
+[
+	{
+		"title": "Item 1",
+		"description": "Descripción del item 1",
+		"image": "ruta/imagen1.jpg",
+		"url": "https://flowbite.com/docs/images/carousel/carousel-1.svg",
+		"isActive": true
+	},
+	{
+		"title": "Item 2",
+		"description": "Descripción del item 2",
+		"image": "ruta/imagen2.jpg",
+		"url": "https://flowbite.com/docs/images/carousel/carousel-2.svg",
+		"isActive": false
+	},
+	{
+		"title": "Item 3",
+		"description": "Descripción del item 3",
+		"image": "ruta/imagen3.jpg",
+		"url": "https://flowbite.com/docs/images/carousel/carousel-3.svg",
+		"isActive": true
+	},
+	{
+		"title": "Item 4",
+		"description": "Descripción del item 4",
+		"image": "ruta/imagen4.jpg",
+		"url": "https://flowbite.com/docs/images/carousel/carousel-4.svg",
+		"isActive": true
+	}
+]

@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Calibri';
+  src: url('src/assets/fonts/calibri/calibri.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AdigianaToybox';
+  src: url('src/assets/fonts/Adigiana-Toybox/AdigianaUI.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PoppinsRegular';
+  src: url('src/assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
