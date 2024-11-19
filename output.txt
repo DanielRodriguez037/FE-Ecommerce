@@ -1,0 +1,124 @@
+.eslintignore
+.eslintrc.cjs
+.gitignore
+index.html
+package.json
+tailwind.config.js
+postcss.config.js
+README.md
+output.txt
+tsconfig.json
+tsconfig.node.json
+vite.config.ts
+.prettierrc
+package-lock.json
+
+├───public
+│       banner.json
+│       vite.svg
+│       featured_product.json
+│       product.json
+│
+├───src
+│   │   App.css
+│   │   index.css
+│   │   main.tsx
+│   │   vite-env.d.ts
+│   │
+│   ├───domain
+│   │   ├───products
+│   │   │       product.interface.ts
+│   │   │       product.service.ts
+│   │   │       product.ts
+│   │   │
+│   │   ├───banner
+│   │   │       banner.interface.ts
+│   │   │       banner.service.ts
+│   │   │       banner.ts
+│   │   │
+│   │   ├───categories
+│   │   │       category.interface.ts
+│   │   │       category.service.ts
+│   │   │
+│   │   └───settings
+│   │           http.interface.ts
+│   │           environment.ts
+│   │           http.service.ts
+│   │
+│   ├───application
+│   │   ├───pages
+│   │   │   ├───Home
+│   │   │   │       Home.tsx
+│   │   │   │
+│   │   │   ├───About
+│   │   │   │       About.tsx
+│   │   │   │
+│   │   │   └───Products
+│   │   │           Products.tsx
+│   │   │
+│   │   ├───components
+│   │   │   ├───Banner
+│   │   │   │       Banner.tsx
+│   │   │   │
+│   │   │   ├───FeaturedCategories
+│   │   │   │       FeaturedCategories.tsx
+│   │   │   │
+│   │   │   ├───Footer
+│   │   │   │       Footer.tsx
+│   │   │   │
+│   │   │   ├───InformationBanner
+│   │   │   │       InformationBanner.tsx
+│   │   │   │
+│   │   │   ├───Navbar
+│   │   │   │       Navbar.tsx
+│   │   │   │
+│   │   │   ├───Permissions
+│   │   │   │       PrivateRouters.tsx
+│   │   │   │
+│   │   │   ├───Brands
+│   │   │   │       Brands.tsx
+│   │   │   │
+│   │   │   ├───FeaturedProduct
+│   │   │   │       FeaturedProduct.tsx
+│   │   │   │
+│   │   │   └───Filters
+│   │   │           FilterProduct.tsx
+│   │   │
+│   │   └───ui
+│   │       ├───components
+│   │       │   ├───ShoppingCard
+│   │       │   │       ShoppingCard.tsx
+│   │       │   │
+│   │       │   ├───Breadcrumb
+│   │       │   │       Breadcrumb.tsx
+│   │       │   │
+│   │       │   └───Accordion
+│   │       │           Accordion.tsx
+│   │       │
+│   │       └───views
+│   │
+│   ├───infrastructure
+│   │   ├───helpers
+│   │   │       encrypt.helper.ts
+│   │   │       file.helper.ts
+│   │   │       get-environments.helper.ts
+│   │   │       signalR.helper.ts
+│   │   │       storage.helper.ts
+│   │   │       testing.helper.tsx
+│   │   │
+│   │   └───router
+│   │           index.tsx
+│   │
+│   ├───store
+│   │       store.ts
+│   │
+│   ├───assets
+│   │   ├───fonts
+│   │   ├───img
+│   │   └───pdf
+│   └───shared
+└───.vscode
+        hooks.code-snippets
+        scss.code-snippets
+        settings.json
+        test.code-snippets

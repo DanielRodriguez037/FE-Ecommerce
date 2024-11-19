@@ -13,7 +13,8 @@ export default {
 		},
 		extend: {
 			colors: {
-				'text-puropelo': '#ECCC9F',
+				puropelo: '#ECCC9F',
+				'puropelo-dark': '#75553B',
 			},
 			fontFamily: {
 				'font-calibri': ['"Calibri"', 'sans-serif'],
@@ -34,10 +35,20 @@ export default {
 					from: { transform: 'translateY(0)' },
 					to: { transform: 'translateY(calc(-100% - var(--gap)))' },
 				},
+				'accordion-down': {
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' },
+				},
+				'accordion-up': {
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' },
+				},
 			},
 			animation: {
 				brand: 'brand var(--duration) linear infinite',
 				'brand-vertical': 'brand-vertical var(--duration) linear infinite',
+				'accordion-down': 'accordion-down 0.2s ease-out',
+				'accordion-up': 'accordion-up 0.2s ease-out',
 			},
 		},
 	},

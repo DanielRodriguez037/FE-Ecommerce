@@ -1,8 +1,8 @@
 import create from 'zustand';
 import { persist,devtools } from 'zustand/middleware';
-import { createHomeState, IHomeStore } from './home/home';
-import { createBannerState, IBannerStore } from './banner/banner';
-import { createProductState, IProductStore } from './products/product';
+import { createHomeState, IHomeStore } from '../domain/home/home';
+import { createBannerState, IBannerStore } from '../domain/banner/banner';
+import { createProductState, IProductStore } from '../domain/products/product';
 
 
 type TypeGlobalActions = {

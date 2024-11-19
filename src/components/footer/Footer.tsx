@@ -2,8 +2,6 @@ import React from 'react';
 import logoProvicional from '@assets/img/logo-provisional.png'
 import { Footer } from 'flowbite-react';
 import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
-import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitter } from 'react-icons/bs';
-
 
 const FooterComponent = () => {
 	return (
@@ -41,9 +39,9 @@ const FooterComponent = () => {
 				<div className='w-full sm:flex sm:items-center sm:justify-between'>
 					<Footer.Copyright href='#' by='Daniel Rodriguez™' year={2024} />
 					<div className='mt-4 flex space-x-6 sm:mt-0 sm:justify-center'>
-						<Footer.Icon href='#' icon={FaFacebook} />
-						<Footer.Icon href='#' icon={FaInstagram} />
-						<Footer.Icon href='#' icon={FaWhatsapp} />
+						<Footer.Icon href='#' icon={FaFacebook} className='text-puropelo' />
+						<Footer.Icon href='#' icon={FaInstagram} className='text-puropelo' />
+						<Footer.Icon href='#' icon={FaWhatsapp} className='text-puropelo' />
 					</div>
 				</div>
 			</div>
