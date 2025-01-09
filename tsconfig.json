@@ -1,42 +1,26 @@
 {
-	"compilerOptions": {
-		"target": "ESNext",
-		"useDefineForClassFields": true,
-		"lib": ["DOM", "DOM.Iterable", "ESNext", "WebWorker"],
-		"allowJs": false,
-		"skipLibCheck": true,
-		"esModuleInterop": true,
-		"allowSyntheticDefaultImports": true,
-		"strict": false,
-		"forceConsistentCasingInFileNames": true,
-		"module": "ESNext",
-		"removeComments": true,
-		"moduleResolution": "Node",
-		"resolveJsonModule": true,
-		"isolatedModules": false,
-		"noEmit": true,
-		"jsx": "react-jsx",
-		"types": ["vite/client", "vite-plugin-pwa/client"],
-		"baseUrl": "src",
-		"paths": {
-			"@src/*": ["/*"],
-			"@core/*": ["core/*"],
-			"@assets/*": ["assets/*"],
-			"@domain/*": ["domain/*"],
-			"@store/*": ["store/*"],
-			"@application/*": ["application/*"],
-			"@hooks/*": ["shared/hooks/*"],
-			"@helpers/*": ["shared/helpers/*"],
-			"@services/*": ["shared/services/*"],
-			"@views/*": ["shared/ui/views/*"],
-			"@widgets/*": ["shared/ui/widgets/*"],
-			"@components/*": ["components/*"],
-			"@interfaces/*": ["shared/interfaces/*"],
-			"@shared/*": ["shared/*"],
-			"@router/*": ["router/*"]
-		}
-	},
-	"include": ["src"],
-	"exclude": ["node_modules", "**/**.test.tsx", "**/**.test.ts", "**/**.spec.tsx", "**/**.spec.ts", "**/**.d.ts"],
-	"references": [{ "path": "./tsconfig.node.json" }]
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
+  },
+  "include": [
+    "src"
+  ]
 }
