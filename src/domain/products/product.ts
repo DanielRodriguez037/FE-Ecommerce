@@ -1,7 +1,7 @@
 import { SetState } from 'zustand'
-import { productServices } from '@src/domain/products/product.service'
+import { productServices } from '@domain/products/product.service'
 import { PuropeloState } from '@store/store'
-import { IProductFilterDto } from '@src/domain/products/product.interface';
+import { IProductFilterDto } from '@domain/products/product.interface';
 
 const createProductInitialState = {
     featured_product: []

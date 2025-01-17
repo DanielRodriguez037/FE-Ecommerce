@@ -33,7 +33,8 @@
 			"@components/*": ["components/*"],
 			"@interfaces/*": ["shared/interfaces/*"],
 			"@shared/*": ["shared/*"],
-			"@router/*": ["router/*"]
+			"@router/*": ["router/*"],
+			"@ui/*": ["ui/*"]
 		}
 	},
 	"include": ["src"],

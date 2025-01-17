@@ -1,5 +1,5 @@
 // Herramientas
-import { encryptHelper, desencryptHelper } from '@src/infrastructure/helpers/encrypt.helper';
+import { encryptHelper, desencryptHelper } from '@infrastructure/helpers/encrypt.helper';
 
 /** Tipo de storage del navegador */
 const storage: Storage = sessionStorage;

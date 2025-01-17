@@ -1,18 +1,18 @@
-import { SetState } from 'zustand'
-import { homeServices } from '@src/domain/home/home.service'
-import { PuropeloState } from '@store/store'
-import { IProductDto } from '@src/domain/products/product.interface';
+import { SetState } from 'zustand';
+import { homeServices } from '@domain/home/home.service';
+import { PuropeloState } from '@store/store';
+import { IProductDto } from '@domain/products/product.interface';
 
 const createHomeInitialState = {
-    products: []
-}
+	products: [],
+};
 
 const createHomeState = (set: SetState<PuropeloState>): IHomeStore => ({
 	createHome: {},
 	allproducts: null,
 	setAllProducts: async () => {
 		const products = await homeServices.getAllProducts();
-		set({ allproducts : [products] });
+		set({ allproducts: [products] });
 	},
 });
 
@@ -22,4 +22,4 @@ interface IHomeStore {
 	setAllProducts: (products) => void;
 }
 
-export { createHomeState, IHomeStore, createHomeInitialState }
+export { createHomeState, IHomeStore, createHomeInitialState };

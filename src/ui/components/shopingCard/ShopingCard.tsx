@@ -1,4 +1,4 @@
-import { IProductDto } from '@src/domain/products/product.interface';
+import { IProductDto } from '@domain/products/product.interface';
 import React from 'react';
 import { FaShoppingCart, FaStar } from 'react-icons/fa';
 

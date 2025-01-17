@@ -2,13 +2,13 @@ import React, { useRef, useState } from 'react';
 import { IoIosArrowDown } from 'react-icons/io';
 
 interface FilterItemProps {
-	filters: { id: number; title: string; items: { id: number; title: string; url :string}[] }[];
+	filters: { id: number; title: string; items: { id: number; title: string; name :string}[] }[];
 }
 
 
 interface AccordionItemProps {
 	handleToggle: (index: number) => void;
-	filter: { id: number; title: string; items: { id: number; title: string; url: string }[] };
+	filter: { id: number; title: string; items: { id: number; title: string; name: string }[] };
 	active: number;
 }
 
@@ -36,9 +36,9 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ handleToggle, filter, act
 					{items.map(item => {
 						return (
 							<li key={item.id} className='mb-2'>
-								<a href={item.url}>
+								<p id={item.name}>
 									{item.title} 
-								</a>
+								</p>
 							</li>
 						);
 					})}

@@ -20,6 +20,7 @@ export default defineConfig({
 			'@interfaces': path.resolve(__dirname, 'src/shared/interfaces'),
 			'@shared': path.resolve(__dirname, 'src/shared'),
 			'@router': path.resolve(__dirname, 'src/router'),
+			'@ui': path.resolve(__dirname, 'src/ui'),
 		},
 		extensions: ['.js', '.jsx', '.ts', '.tsx'],
 	},

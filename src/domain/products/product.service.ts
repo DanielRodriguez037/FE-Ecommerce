@@ -1,6 +1,6 @@
-import { get } from '@src/domain/settings/http.service';
-import { MICROSERVICES } from '@src/domain/settings/envairoment';
-import { IProductFilterDto } from '@src/domain/products/product.interface';
+import { get } from '@domain/settings/http.service';
+import { MICROSERVICES } from '@domain/settings/envairoment';
+import { IProductFilterDto } from '@domain/products/product.interface';
 
 const { featured_product: _featured_product } = MICROSERVICES;
 const featured_product = `${_featured_product}`;

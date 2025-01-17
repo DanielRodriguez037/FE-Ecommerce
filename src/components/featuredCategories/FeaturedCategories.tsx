@@ -14,7 +14,7 @@ const categories = [
 
 const FeaturedCategories = () => {
 	return (
-		<div className='w-[1309px]'>
+		<div className='w-[1191px]'>
 			<div>
 				<span className='flex font-calibri text-2xl items-center gap-2'>
 					<FaShoppingBag className='h-6 w-6 flex-none text-puropelo' />

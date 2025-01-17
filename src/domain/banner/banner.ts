@@ -1,25 +1,25 @@
-import { SetState } from 'zustand'
-import { bannerServices } from '@src/domain/banner/banner.service'
-import { PuropeloState } from '@store/store'
-import { IBannerDto } from '@src/domain/banner/banner.interface';
+import { SetState } from 'zustand';
+import { bannerServices } from '@domain/banner/banner.service';
+import { PuropeloState } from '@store/store';
+import { IBannerDto } from '@domain/banner/banner.interface';
 
 const createBannerInitialState = {
-    banner: []
-}
+	banner: [],
+};
 
 const createBannerState = (set: SetState<PuropeloState>): IBannerStore => ({
-    createBanner: {},
-    allbanners: null,
-    setAllBanners: async () => {
-        const banner = await bannerServices.getBanner();
-        set({ allbanners : banner });
-    },
+	createBanner: {},
+	allbanners: null,
+	setAllBanners: async () => {
+		const banner = await bannerServices.getBanner();
+		set({ allbanners: banner });
+	},
 });
 
 interface IBannerStore {
-    createBanner: object;
-    allbanners: IBannerDto | null;
-    setAllBanners: (banner) => void;
+	createBanner: object;
+	allbanners: IBannerDto | null;
+	setAllBanners: (banner) => void;
 }
 
-export { createBannerState, IBannerStore, createBannerInitialState }
+export { createBannerState, IBannerStore, createBannerInitialState };

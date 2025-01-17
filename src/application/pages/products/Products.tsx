@@ -1,8 +1,8 @@
 import { Label, Pagination, Select } from 'flowbite-react';
 import Layout from '@application/layout/Layout';
-import BreadCrumb from '@src/ui/components/breadcrumb/Breadcrumb';
-import Accordion from '@src/ui/components/accordion/Accordion';
-import ShopingCard from '@src/ui/components/shopingCard/ShopingCard';
+import BreadCrumb from '@ui/components/breadcrumb/Breadcrumb';
+import Accordion from '@ui/components/accordion/Accordion';
+import ShopingCard from '@ui/components/shopingCard/ShopingCard';
 import alimento from '@assets/img/alimento.png';
 
 import useStore from '@store/store';
@@ -14,25 +14,25 @@ const filters = [
 		id: 1,
 		title: 'Categorias',
 		items: [
-			{ id: 1, title: 'Alimentos', url: '/productos/alimentos/' },
-			{ id: 2, title: 'Accesorios', url: '/productos/accesorios/' },
-			{ id: 3, title: 'Juguetes', url: '/productos/juguetes/' },
-			{ id: 4, title: 'Belleza/Higiene', url: '/productos/belleza-higiene/' },
+			{ id: 1, title: 'Alimentos', name:'alimentos' },
+			{ id: 2, title: 'Accesorios', name:'accesorios' },
+			{ id: 3, title: 'Juguetes', name:'juguetes' },
+			{ id: 4, title: 'Belleza/Higiene', name:'bellezaHigiene' },
 		],
 	},
 	{
 		id: 2,
 		title: 'Tipo de mascota',
 		items: [
-			{ id: 1, title: 'Perritos', url: '/productos/tipos_mascotas/perrito' },
-			{ id: 2, title: 'Gaticos', url: '/productos/tipos_mascotas/gaticos' },
+			{ id: 1, title: 'Perritos', name:'perritos' },
+			{ id: 2, title: 'Gaticos', name:'gaticos' },
 		],
 	},
 	{
 		id: 3,
 		title: 'Edad',
 		items: [
-			{ id: 1, title: 'Cachorritos', url: 'ege=cachorritos' },
+			{ id: 1, title: 'Cachorritos', name:'cachorritos' },
 		],
 	},
 ];
